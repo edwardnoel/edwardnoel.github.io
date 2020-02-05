@@ -1,12 +1,11 @@
 function mouse_position() {
-    var event = window.event;
+    var e = window.event;
 
-    var x = event.clientX;
-    var y = event.clientY;
+    var posX = e.clientX;
+    var posY = e.clientY;
 
-    document.Form1.x.value = x;
-    document.Form1.y.value = y;
+    document.Form1.posx.value = posX;
+    document.Form1.posy.value = posY;
 
     var t = setTimeout(mouse_position,100);
-
 }
