@@ -4,22 +4,10 @@
 <head>
 <title> Edward Noel </title>
 <script type="text/javascript" src="javascript/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
- <script>
- $("body").mousemove(function(e) {
-    document.Form1.posx.value = e.pageX;
-    document.Form1.posy.value = e.pageY;
-})
-}
-</script>
+<script>onmousemove = function(e){console.log("mouse location:", e.clientX, e.clientY)}</script>
 </head>
 
-<body onload="mouse_position()">
-<form name="Form1">
-POSX: <input type="text" name="posx"><br>
-POSY: <input type="text" name="posy"><br>
-</form>
+<body>
 </body>
 
 </html>
