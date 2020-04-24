@@ -4,7 +4,6 @@
         <title>Test</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
-        var count = 0;
         function refresh() {
             var fileToLoad = document.getElementById("data.txt").files[0];
             var fr = new FileReader();
@@ -17,7 +16,8 @@
             var textToSave = document.getElementById(counterText+1).value;
             textToSave.download = "data.txt";
         }
-        window.onload = refresh;
+            
+        refresh();
         </script>
     </head>
     <body>
