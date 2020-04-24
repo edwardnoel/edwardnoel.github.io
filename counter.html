@@ -4,8 +4,10 @@
         <title>Test</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
+        var counter = 0;
         function refresh() {
-            alert('ok');
+            counter++;
+            alert(counter);
         }
         window.onload = refresh;
         </script>
