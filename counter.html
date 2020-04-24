@@ -10,12 +10,12 @@
             var fr = new FileReader();
             fr.onload = function(fileLoadedEvent) {
                 var count = fileLoadedEvent.target.result;
-                document.getElementById("counterText").value = count;    
+                document.getElementById("counterText").value = count;
             };
             fr.readAsText(fileToLoad, "UTF-8");
             
-            var textToSave = document.getElementById(counter+1).value;\
-            var fileName = "data.txt";
+            var textToSave = document.getElementById(counter+1).value;
+            textToSave.download = "data.txt";
         }
         window.onload = refresh;
         </script>
