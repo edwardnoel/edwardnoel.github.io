@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Counter</title>
-</head>
-
-<body>
-  <div>
-    <p>Your count is: <span id="cntr">0</span></p>
-  </div>
-
-  <script>
-    function counter_fn() {
-      var counter = document.getElementById("cntr");
-      var count = 0;
-      count = parseInt(counter.innerHTML);
-      count = count + 1;
-      counter.innerHTML = count;
-    }
-    window.onload = counter_fn;
-  </script>
-</body>
-
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function refresh() {
+            alert('ok');
+        }
+        window.onload = refresh;
+        </script>
+    </head>
+    <body>
+    
+    </body>
 </html>
