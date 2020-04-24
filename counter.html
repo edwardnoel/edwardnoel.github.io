@@ -6,13 +6,22 @@
         <script type="text/javascript">
         var counter = 0;
         function refresh() {
-            counter++;
+            var fileToLoad = document.getElementById("data.txt").files[0];
+            var fr = new FileReader();
+            fr.onload = function(fileLoadedEvent) {
+                var count = fileLoadedEvent.target.result;
+                document.getElementById("counterText").value = count;    
+            };
+            fr.readAsText(fileToLoad, "UTF-8");
+            
+            var textToSave = document.getElementById(counter+1).value;\
+            var fileName = "data.txt";
             alert(counter);
         }
         window.onload = refresh;
         </script>
     </head>
     <body>
-    
+        <textarea id="textToSave" cols="80" rows="25"></textarea>
     </body>
 </html>
