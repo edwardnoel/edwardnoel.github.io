@@ -4,7 +4,7 @@
         <title>Test</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <script type="text/javascript">
-        var counter = 0;
+        var count = 0;
         function refresh() {
             var fileToLoad = document.getElementById("data.txt").files[0];
             var fr = new FileReader();
@@ -16,12 +16,11 @@
             
             var textToSave = document.getElementById(counter+1).value;\
             var fileName = "data.txt";
-            alert(counter);
         }
         window.onload = refresh;
         </script>
     </head>
     <body>
-        <textarea id="textToSave" cols="80" rows="25"></textarea>
+        <textarea id="counterText" cols="80" rows="25"></textarea>
     </body>
 </html>
